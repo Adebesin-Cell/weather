@@ -399,7 +399,7 @@ body {
   margin-bottom: -10px;
 }
 
-.progress__bar {
+.progress__bar, .progress__value {
   font-family: var(--family);
   font-size: var(--size-xs);
   font-style: normal;
@@ -408,6 +408,11 @@ body {
   letter-spacing: 0em;
   text-align: center;
   color: var(--weather-description-text-grayish-blue);
+}
+
+.progress__unit {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .progress__input {

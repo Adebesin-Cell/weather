@@ -8,7 +8,8 @@
     margin-bottom: -10px;
   }
 
-  &__bar {
+  &__bar,
+  &__value {
     font-family: var(--family);
     font-size: var(--size-xs);
     font-style: normal;
@@ -17,6 +18,11 @@
     letter-spacing: 0em;
     text-align: center;
     color: var(--weather-description-text-grayish-blue);
+  }
+
+  &__unit {
+    display: flex;
+    justify-content: flex-end;
   }
 
   &__input {
