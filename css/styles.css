@@ -396,6 +396,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: -10px;
 }
 
 .progress__bar {
@@ -412,6 +413,7 @@ body {
 .progress__input {
   width: 100%;
   appearance: none;
+  height: 8px;
 }
 
 .progress__input::-webkit-progress-bar {

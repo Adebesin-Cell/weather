@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: -10px;
   }
 
   &__bar {
@@ -23,6 +24,7 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    height: 8px;
 
     &::-webkit-progress-bar {
       background: var(--text-grey);
