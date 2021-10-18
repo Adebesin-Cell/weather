@@ -1,0 +1,14 @@
+.view {
+  padding-top: var(--span-l);
+  background: var(--main-view-background);
+
+  &__wrapper {
+    padding: 0 calc(2 * var(--span-2xl));
+  }
+
+  &__header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}

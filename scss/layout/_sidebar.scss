@@ -1,0 +1,36 @@
+.sidebar {
+  background: var(--sidebar-background);
+  padding: 0 calc(var(--span-l) + 5px);
+  padding-top: var(--span-l);
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: var(--span-s);
+  }
+
+  &__geolocator {
+    cursor: pointer;
+    &-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--geolocator-background);
+      border-radius: 50%;
+      box-shadow: 0px 4px 4px #00000040;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      svg {
+        width: 24px;
+        height: 24px;
+        fill: var(--geolocator-color);
+      }
+    }
+  }
+
+  &__main {
+    padding-top: var(--span-2xl);
+  }
+}

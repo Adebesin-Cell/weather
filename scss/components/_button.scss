@@ -1,0 +1,19 @@
+.btn {
+  display: inline-block;
+  border: none;
+  outline: none;
+  font-family: var(--family);
+  cursor: pointer;
+
+  &--grey {
+    font-size: var(--size-m);
+    font-style: normal;
+    font-weight: var(--weight-md);
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--button-text-white);
+    background: var(--button-background-grey);
+    padding: var(--unit) var(--span-s);
+  }
+}

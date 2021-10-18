@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="assets/images/devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/images/devchallenges.png"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container container--grid">
+      <section class="sidebar">
+        <div class="sidebar__header">
+          <div class="sidebar__btn">
+            <button class="btn btn--grey btn--menu-toggle">
+              Search for places
+            </button>
+          </div>
+          <div class="sidebar__geolocator">
+            <span class="sidebar__geolocator-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g>
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path
+                    d="M12 16l3 6H9l3-6zm-2.627.255a5 5 0 1 1 5.255 0l-1.356-2.711a2 2 0 1 0-2.544 0l-1.355 2.71zm-2.241 4.482A9.997 9.997 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10a9.997 9.997 0 0 1-5.132 8.737l-1.343-2.688a7 7 0 1 0-7.05 0l-1.343 2.688z"
+                  />
+                </g>
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div class="sidebar__main">
+          <div class="weather-info">
+            <div class="weather-info__image-box">
+              <img
+                src="./assets/images/Shower.png"
+                alt="cloud"
+                class="weather-info__image"
+              />
+            </div>
+            <h1 class="weather-info__heading">
+              <span class="weather-info__heading--main"> 15 </span>
+              <span class="weather-info__heading--sub">℃</span>
+            </h1>
+            <p class="weather-info__description">Shower</p>
+            <div class="weather-info__date">
+              <span class="weather-info__current-time">Today</span>
+              <span class="waether-info__divider"> . </span>
+              <span class="weather-info__time"> Fri, 5 Jun </span>
+            </div>
+            <div class="weather-info__location">
+              <span class="weather-info__location-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <g>
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                      d="M18.364 17.364L12 23.728l-6.364-6.364a9 9 0 1 1 12.728 0zM12 13a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"
+                    />
+                  </g>
+                </svg>
+              </span>
+              <span class="weather-info__location-text"> Helsinki </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="view">
+        <div class="view__wrapper">
+          <div class="view__header">
+            <div class="view__controls">
+              <button class="btn btn--view btn--celcius">℃</button>
+              <button class="btn btn--view btn--farenheit">℉</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
