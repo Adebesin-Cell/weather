@@ -1,6 +1,9 @@
 .view {
   padding-top: var(--span-l);
   background: var(--main-view-background);
+  @media (max-width: 600px) {
+    padding-top: var(--span-xl);
+  }
 
   &__wrapper {
     padding: 0 calc(2 * var(--span-2xl));
@@ -31,6 +34,9 @@
   &__main {
     padding-top: var(--span-xl);
     padding-bottom: var(--span-m);
+    @media (max-width: 600px) {
+      padding-top: 0;
+    }
   }
 
   &__container {
