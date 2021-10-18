@@ -3,6 +3,10 @@
     display: block;
     width: 200px;
     height: 230px;
+    @media (max-width: 1140px) {
+      width: 175px;
+      height: 200px;
+    }
 
     &-box {
       display: flex;
@@ -12,6 +16,9 @@
       // background-size: cover;
       // background-position: center;
       margin: 0 calc(-1 * var(--span-l) + 5px);
+      @media (max-width: 1140px) {
+        margin: 0 calc(-1 * var(--span-s));
+      }
     }
   }
 
@@ -30,6 +37,12 @@
       font-weight: calc(var(--weight-sm) - var(--weight-xsm));
       line-height: 56px;
       color: var(--text-grayish-blue);
+      margin-bottom: var(--span-l);
+      @media (max-width: 1200px) {
+        font-size: calc(var(--size-xl) + 4px);
+        line-height: 48px;
+        margin-bottom: var(--span-s);
+      }
     }
 
     &--main {
@@ -37,6 +50,11 @@
       font-weight: var(--weight-md);
       line-height: 169px;
       color: var(--text-grey);
+
+      @media (max-width: 1200px) {
+        font-size: calc(2 * var(--size-2xl) + var(--size-m));
+        line-height: 150px;
+      }
     }
   }
 

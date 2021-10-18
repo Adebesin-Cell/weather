@@ -12,11 +12,19 @@
   visibility: visible;
   transition: 300ms;
 
+  @media (max-width: 1140px) {
+    padding: 0 var(--span-s);
+  }
+
+  @media (max-width: 600px) {
+    padding: 0 15px;
+  }
+
   &--hidden {
     left: -100%;
     opacity: 0;
     visibility: hidden;
-    transform: translate3d(0, 0, 0);
+    transition: none;
   }
 
   &__header {

@@ -46,5 +46,9 @@
     font-size: var(--size-m);
     font-weight: var(--weight-lg);
     line-height: 19px;
+    display: block;
+    @media (max-width: 1200px) {
+      height: 50px;
+    }
   }
 }

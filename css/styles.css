@@ -112,6 +112,13 @@ body {
   font-size: var(--size-m);
   font-weight: var(--weight-lg);
   line-height: 19px;
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .btn--form {
+    height: 50px;
+  }
 }
 
 .card {
@@ -225,6 +232,12 @@ body {
   grid-template-columns: 2fr 1fr;
 }
 
+@media (max-width: 1200px) {
+  .form__group {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .form__container {
   display: flex;
   border: 1px solid var(--text-grey);
@@ -282,11 +295,23 @@ body {
   transition: 300ms;
 }
 
+@media (max-width: 1140px) {
+  .menu {
+    padding: 0 var(--span-s);
+  }
+}
+
+@media (max-width: 600px) {
+  .menu {
+    padding: 0 15px;
+  }
+}
+
 .menu--hidden {
   left: -100%;
   opacity: 0;
   visibility: hidden;
-  transform: translate3d(0, 0, 0);
+  transition: none;
 }
 
 .menu__header {
@@ -403,6 +428,20 @@ body {
   padding-top: var(--span-l);
 }
 
+@media (max-width: 1140px) {
+  .sidebar {
+    padding: 0 var(--span-s);
+    padding-top: var(--span-l);
+  }
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    padding: 0 15px;
+    padding-top: 20px;
+  }
+}
+
 .sidebar__header {
   display: flex;
   justify-content: space-between;
@@ -444,6 +483,12 @@ body {
   padding: 0 calc(2 * var(--span-2xl));
 }
 
+@media (max-width: 1200px) {
+  .view__wrapper {
+    padding: 0 calc(var(--span-2xl) + var(--span-m));
+  }
+}
+
 .view__header {
   display: flex;
   justify-content: flex-end;
@@ -456,6 +501,7 @@ body {
 
 .view__main {
   padding-top: var(--span-xl);
+  padding-bottom: var(--span-m);
 }
 
 .view__container {
@@ -465,6 +511,18 @@ body {
 .view__container--sm {
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 20px;
+}
+
+@media (max-width: 1300px) {
+  .view__container--sm {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .view__container--sm {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .view__container--lg {
@@ -504,11 +562,24 @@ body {
   height: 230px;
 }
 
+@media (max-width: 1140px) {
+  .weather-info__image {
+    width: 175px;
+    height: 200px;
+  }
+}
+
 .weather-info__image-box {
   display: flex;
   justify-content: center;
   padding-bottom: calc(var(--span-2xl) + var(--span-s));
   margin: 0 calc(-1 * var(--span-l) + 5px);
+}
+
+@media (max-width: 1140px) {
+  .weather-info__image-box {
+    margin: 0 calc(-1 * var(--span-s));
+  }
 }
 
 .weather-info__heading {
@@ -527,6 +598,15 @@ body {
   font-weight: calc(var(--weight-sm) - var(--weight-xsm));
   line-height: 56px;
   color: var(--text-grayish-blue);
+  margin-bottom: var(--span-l);
+}
+
+@media (max-width: 1200px) {
+  .weather-info__heading--sub {
+    font-size: calc(var(--size-xl) + 4px);
+    line-height: 48px;
+    margin-bottom: var(--span-s);
+  }
 }
 
 .weather-info__heading--main {
@@ -534,6 +614,13 @@ body {
   font-weight: var(--weight-md);
   line-height: 169px;
   color: var(--text-grey);
+}
+
+@media (max-width: 1200px) {
+  .weather-info__heading--main {
+    font-size: calc(2 * var(--size-2xl) + var(--size-m));
+    line-height: 150px;
+  }
 }
 
 .weather-info__description {
