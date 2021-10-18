@@ -20,8 +20,91 @@
     <title>Weather App</title>
   </head>
   <body>
-    <div class="container container--grid">
+    <div class="container--grid">
       <section class="sidebar">
+        <div class="menu menu--hidden">
+          <div class="menu__header">
+            <span class="menu__close">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g>
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path
+                    d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"
+                  />
+                </g>
+              </svg>
+            </span>
+          </div>
+          <form action="#" class="form">
+            <div class="form__group">
+              <div class="form__container">
+                <span class="form__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <g>
+                      <path fill="none" d="M0 0h24v24H0z" />
+                      <path
+                        d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"
+                      />
+                    </g>
+                  </svg>
+                </span>
+                <input
+                  type="text"
+                  class="form__input"
+                  placeholder="search location"
+                />
+              </div>
+              <button type="submit" class="btn btn--form btn--blue">
+                Search
+              </button>
+            </div>
+          </form>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <span class="menu__text" data-location="London"> London </span>
+              <span class="menu__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <g>
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                      d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
+                    />
+                  </g>
+                </svg>
+              </span>
+            </li>
+            <li class="menu__item">
+              <span class="menu__text" data-location="Barcelona">
+                Barcelona
+              </span>
+              <span class="menu__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <g>
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                      d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
+                    />
+                  </g>
+                </svg>
+              </span>
+            </li>
+            <li class="menu__item">
+              <span class="menu__text" data-location="Long Beach">
+                Long Beach
+              </span>
+              <span class="menu__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <g>
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                      d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
+                    />
+                  </g>
+                </svg>
+              </span>
+            </li>
+          </ul>
+        </div>
         <div class="sidebar__header">
           <div class="sidebar__btn">
             <button class="btn btn--grey btn--menu-toggle">
@@ -232,5 +315,6 @@
         </div>
       </section>
     </div>
+    <script src="./Js/app.js"></script>
   </body>
 </html>

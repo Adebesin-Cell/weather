@@ -36,6 +36,11 @@
   --card-background: #1e213a;
   --card-icon-bg: #ffffff4d;
   --progress-yellow: #ffec65;
+  --menu-background: #1e213a;
+  --search: #616475;
+  --search-blue: #3c47e9;
+  --border: #616475;
+  --icon: #616475;
 }
 
 *,
@@ -99,6 +104,14 @@ body {
 .btn--farenheit {
   background: var(--button-farenheit);
   color: var(--text-grey);
+}
+
+.btn--form {
+  background: var(--search-blue);
+  color: var(--text-grey);
+  font-size: var(--size-m);
+  font-weight: var(--weight-lg);
+  line-height: 19px;
 }
 
 .card {
@@ -181,6 +194,10 @@ body {
   align-items: center;
 }
 
+.card__icon {
+  margin-right: var(--span-xs);
+}
+
 .card__icon svg {
   width: 30px;
   height: 30px;
@@ -193,6 +210,142 @@ body {
   font-style: normal;
   font-weight: var(--weight-md);
   line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--text-grey);
+}
+
+.form {
+  padding-top: var(--span-l);
+}
+
+.form__group {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 2fr 1fr;
+}
+
+.form__container {
+  display: flex;
+  border: 1px solid var(--text-grey);
+  padding: calc(var(--span-xs) + 2px);
+}
+
+.form__icon svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--search);
+}
+
+.form__input {
+  padding-left: var(--span-xs);
+  background: transparent;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  border: none;
+  display: block;
+  font-family: var(--family);
+  font-size: var(--size-m);
+  font-style: normal;
+  font-weight: var(--weight-md);
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--search);
+}
+
+.form__input::-webkit-input-placeholder {
+  font-family: var(--family);
+  font-size: var(--size-m);
+  font-style: normal;
+  font-weight: var(--weight-md);
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--search);
+}
+
+.menu {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: var(--menu-background);
+  padding: 0 calc(var(--span-l) + 5px);
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+  visibility: visible;
+  transition: 300ms;
+}
+
+.menu--hidden {
+  left: -100%;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.menu__header {
+  padding-top: var(--span-s);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu__close {
+  cursor: pointer;
+}
+
+.menu__close svg {
+  width: 32px;
+  height: 32px;
+  fill: var(--text-grey);
+  pointer-events: none;
+}
+
+.menu__close svg path {
+  transform: scale(1.3);
+  pointer-events: none;
+}
+
+.menu__list {
+  padding-top: var(--span-2xl);
+  list-style-type: none;
+}
+
+.menu__item {
+  padding: var(--span-s) var(--span-xs);
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: 300ms;
+  align-items: center;
+}
+
+.menu__item:not(:last-child) {
+  margin-bottom: var(--span-xs);
+}
+
+.menu__item:hover {
+  border: 1px solid var(--border);
+}
+
+.menu__icon svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--icon);
+}
+
+.menu__text {
+  font-family: var(--family);
+  font-size: var(--size-m);
+  font-style: normal;
+  font-weight: var(--weight-md);
+  line-height: 19px;
   letter-spacing: 0em;
   text-align: left;
   color: var(--text-grey);
@@ -244,6 +397,7 @@ body {
 }
 
 .sidebar {
+  position: relative;
   background: var(--sidebar-background);
   padding: 0 calc(var(--span-l) + 5px);
   padding-top: var(--span-l);
@@ -278,7 +432,7 @@ body {
 }
 
 .sidebar__main {
-  padding-top: var(--span-2xl);
+  padding-top: calc(var(--span-2xl) + var(--span-s));
 }
 
 .view {
@@ -353,7 +507,7 @@ body {
 .weather-info__image-box {
   display: flex;
   justify-content: center;
-  padding-bottom: var(--span-xl);
+  padding-bottom: calc(var(--span-2xl) + var(--span-s));
   margin: 0 calc(-1 * var(--span-l) + 5px);
 }
 
@@ -365,7 +519,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  padding-bottom: var(--span-xl);
+  padding-bottom: calc(var(--span-2xl) + var(--span-s));
 }
 
 .weather-info__heading--sub {
@@ -391,7 +545,7 @@ body {
   letter-spacing: 0em;
   text-align: center;
   color: var(--weather-description-text-grayish-blue);
-  padding-bottom: var(--span-xl);
+  padding-bottom: calc(var(--span-2xl) + var(--span-s));
 }
 
 .weather-info__date {

@@ -1,4 +1,5 @@
 .sidebar {
+  position: relative;
   background: var(--sidebar-background);
   padding: 0 calc(var(--span-l) + 5px);
   padding-top: var(--span-l);
@@ -31,6 +32,6 @@
   }
 
   &__main {
-    padding-top: var(--span-2xl);
+    padding-top: calc(var(--span-2xl) + var(--span-s));
   }
 }

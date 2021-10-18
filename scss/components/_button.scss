@@ -39,4 +39,12 @@
     background: var(--button-farenheit);
     color: var(--text-grey);
   }
+
+  &--form {
+    background: var(--search-blue);
+    color: var(--text-grey);
+    font-size: var(--size-m);
+    font-weight: var(--weight-lg);
+    line-height: 19px;
+  }
 }

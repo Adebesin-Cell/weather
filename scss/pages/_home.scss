@@ -7,7 +7,7 @@
     &-box {
       display: flex;
       justify-content: center;
-      padding-bottom: var(--span-xl);
+      padding-bottom: calc(var(--span-2xl) + var(--span-s));
       // background: url(../assets/images/Cloud-background.png);
       // background-size: cover;
       // background-position: center;
@@ -23,7 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    padding-bottom: var(--span-xl);
+    padding-bottom: calc(var(--span-2xl) + var(--span-s));
 
     &--sub {
       font-size: var(--size-2xl);
@@ -49,7 +49,7 @@
     letter-spacing: 0em;
     text-align: center;
     color: var(--weather-description-text-grayish-blue);
-    padding-bottom: var(--span-xl);
+    padding-bottom: calc(var(--span-2xl) + var(--span-s));
   }
 
   &__date {
