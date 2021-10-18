@@ -543,6 +543,7 @@ body {
 @media (max-width: 600px) {
   .view__main {
     padding-top: 0;
+    padding-bottom: var(--span-2xl);
   }
 }
 
@@ -762,6 +763,12 @@ body {
   align-items: center;
   justify-content: center;
   padding-bottom: var(--span-xl);
+}
+
+@media (max-width: 600px) {
+  .weather-info__location {
+    padding-bottom: calc(var(--span-2xl) + var(--span-s));
+  }
 }
 
 .weather-info__location-icon {

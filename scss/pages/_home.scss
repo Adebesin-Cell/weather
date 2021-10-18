@@ -110,6 +110,9 @@
     align-items: center;
     justify-content: center;
     padding-bottom: var(--span-xl);
+    @media (max-width: 600px) {
+      padding-bottom: calc(var(--span-2xl) + var(--span-s));
+    }
     &-icon {
       height: 20px;
       width: 16px;
