@@ -22,7 +22,31 @@
 
   &__container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 20px;
+
+    &--sm {
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 20px;
+    }
+
+    &--lg {
+      padding-top: var(--span-m);
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 50px;
+    }
+  }
+
+  &__highlight {
+    padding-top: var(--span-xl);
+  }
+
+  &__title {
+    font-family: var(--family);
+    font-size: var(--size-l);
+    font-style: normal;
+    font-weight: var(--weight-xlg);
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--text-grey);
   }
 }
