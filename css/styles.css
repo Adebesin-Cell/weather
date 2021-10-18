@@ -31,6 +31,9 @@
   --text-grayish-blue: #908fa2;
   --weather-description-text-grayish-blue: #a09fb1;
   --weather-date-text: #88869d;
+  --button-farenheit: #585676;
+  --text-blue: #110e3c;
+  --card-background: #1e213a;
 }
 
 *,
@@ -67,6 +70,79 @@ body {
   color: var(--button-text-white);
   background: var(--button-background-grey);
   padding: var(--unit) var(--span-s);
+}
+
+.btn--view {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: calc(var(--size-m) + 2px);
+  font-weight: var(--weight-xlg);
+  line-height: 21px;
+}
+
+.btn--celcius {
+  margin-right: var(--span-xs);
+  background: var(--button-background-grey);
+  color: var(--text-blue);
+}
+
+.btn--farenheit {
+  background: var(--button-farenheit);
+  color: var(--text-grey);
+}
+
+.card {
+  padding: var(--span-s);
+  background: var(--card-background);
+  max-height: 100%;
+}
+
+.card__header--sm {
+  font-family: var(--family);
+  font-size: var(--size-s);
+  font-style: normal;
+  font-weight: var(--weight-md);
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--text-grey);
+  padding-bottom: var(--span-xs);
+}
+
+.card__image {
+  display: block;
+  width: 100%;
+}
+
+.card__image--sm {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.card__temperature {
+  padding-top: var(--span-m);
+  font-family: var(--family);
+  font-size: var(--size-m);
+  font-style: normal;
+  font-weight: var(--weight-md);
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__temperature--left {
+  color: var(--text-grey);
+}
+
+.card__temperature--right {
+  color: var(--weather-description-text-grayish-blue);
 }
 
 .sidebar {
@@ -122,6 +198,20 @@ body {
   align-items: center;
 }
 
+.view__controls {
+  display: flex;
+}
+
+.view__main {
+  padding-top: var(--span-xl);
+}
+
+.view__container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -142,6 +232,7 @@ body {
   display: flex;
   justify-content: center;
   padding-bottom: var(--span-xl);
+  margin: 0 calc(-1 * var(--span-l) + 5px);
 }
 
 .weather-info__heading {

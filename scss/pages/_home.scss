@@ -8,6 +8,10 @@
       display: flex;
       justify-content: center;
       padding-bottom: var(--span-xl);
+      // background: url(../assets/images/Cloud-background.png);
+      // background-size: cover;
+      // background-position: center;
+      margin: 0 calc(-1 * var(--span-l) + 5px);
     }
   }
 

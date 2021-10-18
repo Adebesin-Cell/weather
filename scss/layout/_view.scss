@@ -11,4 +11,18 @@
     justify-content: flex-end;
     align-items: center;
   }
+
+  &__controls {
+    display: flex;
+  }
+
+  &__main {
+    padding-top: var(--span-xl);
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+  }
 }

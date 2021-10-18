@@ -1,0 +1,51 @@
+.card {
+  padding: var(--span-s);
+  background: var(--card-background);
+  max-height: 100%;
+
+  &__header {
+    &--sm {
+      font-family: var(--family);
+      font-size: var(--size-s);
+      font-style: normal;
+      font-weight: var(--weight-md);
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: var(--text-grey);
+      padding-bottom: var(--span-xs);
+    }
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+
+    &--sm {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto;
+    }
+  }
+
+  &__temperature {
+    padding-top: var(--span-m);
+    font-family: var(--family);
+    font-size: var(--size-m);
+    font-style: normal;
+    font-weight: var(--weight-md);
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+
+    &--left {
+      color: var(--text-grey);
+    }
+
+    &--right {
+      color: var(--weather-description-text-grayish-blue);
+    }
+  }
+}
