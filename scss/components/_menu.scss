@@ -51,6 +51,9 @@
   &__list {
     padding-top: var(--span-2xl);
     list-style-type: none;
+    @media (max-width: 600px) {
+      padding-top: var(--span-l);
+    }
   }
 
   &__item {

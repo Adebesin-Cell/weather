@@ -232,6 +232,12 @@ body {
   padding-top: var(--span-l);
 }
 
+@media (max-width: 600px) {
+  .form {
+    padding-top: var(--span-m);
+  }
+}
+
 .form__group {
   display: grid;
   grid-gap: 10px;
@@ -351,6 +357,12 @@ body {
 .menu__list {
   padding-top: var(--span-2xl);
   list-style-type: none;
+}
+
+@media (max-width: 600px) {
+  .menu__list {
+    padding-top: var(--span-l);
+  }
 }
 
 .menu__item {
