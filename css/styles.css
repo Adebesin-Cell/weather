@@ -445,6 +445,7 @@ body {
   background: var(--sidebar-background);
   padding: 0 calc(var(--span-l) + 5px);
   padding-top: var(--span-l);
+  overflow: hidden;
 }
 
 @media (max-width: 1140px) {
@@ -491,6 +492,15 @@ body {
 
 .sidebar__main {
   padding-top: calc(var(--span-2xl) + var(--span-s));
+  position: relative;
+}
+
+.sidebar__overlay {
+  position: absolute;
+  width: 100%;
+  transform: scale(1.8);
+  left: 0;
+  opacity: 0.1;
 }
 
 .view {
@@ -621,7 +631,7 @@ body {
 
 .container--grid {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 0.958fr 2.042fr;
 }
 
 @media (max-width: 1024px) {

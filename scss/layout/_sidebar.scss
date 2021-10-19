@@ -3,6 +3,8 @@
   background: var(--sidebar-background);
   padding: 0 calc(var(--span-l) + 5px);
   padding-top: var(--span-l);
+  overflow: hidden;
+
   @media (max-width: 1140px) {
     padding: 0 var(--span-s);
     padding-top: var(--span-l);
@@ -42,5 +44,14 @@
 
   &__main {
     padding-top: calc(var(--span-2xl) + var(--span-s));
+    position: relative;
+  }
+
+  &__overlay {
+    position: absolute;
+    width: 100%;
+    transform: scale(1.8);
+    left: 0;
+    opacity: 0.1;
   }
 }
