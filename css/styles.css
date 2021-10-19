@@ -597,7 +597,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   .view__container--sm {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -609,7 +609,7 @@ body {
   grid-gap: 50px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   .view__container--lg {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -652,7 +652,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   .container--grid {
     grid-template-columns: 40% 60%;
   }
